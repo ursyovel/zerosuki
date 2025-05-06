@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+/* Apply yellow-orange gradient background */
+body {
+  @apply text-gray-900 dark:text-gray-100;
+
+  background: #f9fafb; /* Light mode background fallback */
+
+  @media (prefers-color-scheme: dark) {
+    background: linear-gradient(135deg, #ffb703, #fb8500); /* Yellow to Orange gradient */
+    color: #f1f5f9;
+  }
+}
