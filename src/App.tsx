@@ -43,7 +43,7 @@ function App() {
             </div>
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/src/assets/creator.jpg"
+                src="/creator.jpg" // Moved to public folder
                 alt="Creator"
                 className="w-12 h-12 rounded-full border-2 border-white"
               />
@@ -88,18 +88,4 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm shadow-inner">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-          <span>© {new Date().getFullYear()} ZeroSuki</span>
-          <button
-            onClick={() => setPopupOpen(true)}
-            className="text-orange-600 dark:text-orange-400 hover:underline"
-          >
-            Creator's Portfolio
-          </button>
-        </div>
-      </footer>
-    </div>
-  );
-}
-
-export default App;
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center text-sm text-gray-500 dark
